@@ -106,6 +106,7 @@ gulp.task('copy', function() {
 gulp.task('dist', ['default'], function() {
   gulp.src([
     '**/*',
+    '!dist/**/*',
     '!node_modules/**/*'
   ])
   .pipe(gulp.dest('dist'))
