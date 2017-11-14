@@ -11,6 +11,9 @@
     "theme",
     "template"
   ],
+  "scripts": {
+    "deploy": "gulp dist & ssh-deployer -f deploy.json --host barend-erasmus.developersworkspace.co.za --username root --password MidericK96 --workspace ./"
+  },
   "homepage": "https://startbootstrap.com/template-overviews/resume",
   "bugs": {
     "url": "https://github.com/BlackrockDigital/startbootstrap-resume/issues",

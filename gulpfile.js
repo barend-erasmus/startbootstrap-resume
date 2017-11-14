@@ -102,6 +102,15 @@ gulp.task('copy', function() {
     .pipe(gulp.dest('vendor/simple-line-icons'))
 })
 
+
+gulp.task('dist', ['default'], function() {
+  gulp.src([
+    '**/*',
+    '!node_modules/**/*'
+  ])
+  .pipe(gulp.dest('dist'))
+});
+
 // Default task
 gulp.task('default', ['sass', 'minify-css', 'minify-js', 'copy']);
 
