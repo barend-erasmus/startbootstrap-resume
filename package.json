@@ -12,7 +12,7 @@
     "template"
   ],
   "scripts": {
-    "deploy": "gulp dist & ssh-deployer -f deploy.json --host barend-erasmus.developersworkspace.co.za --username root --password MidericK96 --workspace ./"
+    "deploy": "gulp dist & ssh-deployer -f deploy.json --host barend-erasmus.developersworkspace.co.za --username username --password password --workspace ./"
   },
   "homepage": "https://startbootstrap.com/template-overviews/resume",
   "bugs": {
